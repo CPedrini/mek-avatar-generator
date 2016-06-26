@@ -5,14 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>MEK - Avatar generator</title>
+    <title>eRevollution - Avatar generator</title>
 
     <!-- CSS
     ====================================== -->
     <link href="resources/css/bootstrap-3.3.5.min.css" rel="stylesheet">
     <link href="resources/css/bootstrap-theme-3.3.5.min.css" rel="stylesheet">
     <link href="resources/css/bootstrap-colorpicker-2.3.min.css" rel="stylesheet">
-    <link href="resources/css/avatar-generator-1.0.0.min.css" rel="stylesheet">
+    <link href="resources/css/avatar-generator-1.0.1.min.css" rel="stylesheet">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -31,11 +31,11 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="#">MEK</a>
+          <a class="navbar-brand" href="#">Ejercito Argentino</a>
         </div>
         <div id="navbar" class="collapse navbar-collapse">
           <ul class="nav navbar-nav">
-            <li class="active"><a href="#">Avatar generator</a></li>
+            <li class="active"><a href="#">Generador de avatares</a></li>
           </ul>
         </div><!--/.nav-collapse -->
       </div>
@@ -44,32 +44,20 @@
     <div class="container">
 
       <div class="generator-template">
-        <h1>Avatar generator</h1>
-        <p class="lead">Use this to generate your MEK avatar.</p>
+        <h1>Generador de avatares</h1>
+        <p class="lead">Usalo para generar tu avatar del Ejercito Argentino.</p>
       </div>
 
       <div class="well">
         <div class="row">
           <div class="col-md-12">
             <form>
-              <legend>Select frame</legend>
+              <legend>Elige un marco</legend>
 
               <div class="frames-wrapper">
                 <div class="frames">
                   <a class="selected" href="#">
-                    <img src="frames/mek_whole.png" alt="Whole version" />
-                  </a>
-                  <a href="#">
-                    <img src="frames/mek_top.png" alt="Top version" />
-                  </a>
-                  <a href="#">
-                    <img src="frames/mek_down.png" alt="Down version" />
-                  </a>
-                  <a href="#">
-                    <img src="frames/mek_side_left.png" alt="Left side version" />
-                  </a>
-                  <a href="#">
-                    <img src="frames/mek_side_right.png" alt="Right side version" />
+                    <img src="frames/erev_whole.png" alt="Version completa" />
                   </a>
                 </div>
               </div>
@@ -89,22 +77,22 @@
           </div>
           <div class="col-md-7">
             <form target="_blank" action="download.php" method="POST">
-              <legend>Avatar configuration</legend>
+              <legend>Configuración del avatar</legend>
               <div class="form-group">
-                <label for="inputUpload">Upload image</label>
-                <input type="file" class="filestyle" id="inputUpload" data-placeholder="Select image" data-icon="false"  />
+                <label for="inputUpload">Subir imagen</label>
+                <input type="file" class="filestyle" id="inputUpload" data-placeholder="Seleccionar imagen" data-buttonText="Elegir" data-icon="false"  />
               </div>
               <div class="form-group">
-                <label>Image proportion</label>
+                <label>Proporción de la imagen</label>
                 <div class="panel panel-default">
                   <ul class="list-group">
                     <li class="list-group-item">
                       <div class="text-right">
                         <label class="radio-inline">
-                          <input type="radio" name="inputImageProportion" value="contain" checked="checked"> Contain
+                          <input type="radio" name="inputImageProportion" value="contain" checked="checked"> Contener
                         </label>
                         <label class="radio-inline">
-                          <input type="radio" name="inputImageProportion" value="scale"> Scale
+                          <input type="radio" name="inputImageProportion" value="scale"> Escalar
                         </label>
                         <label class="radio-inline">
                           <input type="radio" name="inputImageProportion" value="original"> Original
@@ -115,20 +103,20 @@
                 </div>
               </div>
               <div class="form-group">
-                <label>Image position</label>
+                <label>Posición de la imagen</label>
                 <div class="panel panel-default">
                   <ul class="list-group">
                     <li class="list-group-item">
                       <span class="list-group-item-heading">Vertical</span>
                       <div class="list-group-item-text">
                         <label class="radio-inline">
-                          <input type="radio" name="inputImagePositionY" value="top" checked="checked"> Top
+                          <input type="radio" name="inputImagePositionY" value="top" checked="checked"> Arriba
                         </label>
                         <label class="radio-inline">
-                          <input type="radio" name="inputImagePositionY" value="middle"> Middle
+                          <input type="radio" name="inputImagePositionY" value="middle"> Medio
                         </label>
                         <label class="radio-inline">
-                          <input type="radio" name="inputImagePositionY" value="bottom"> Bottom
+                          <input type="radio" name="inputImagePositionY" value="bottom"> Abajo
                         </label>
                       </div>
                     </li>
@@ -136,13 +124,13 @@
                       <span class="list-group-item-heading">Horizontal</span>
                       <div class="list-group-item-text">
                         <label class="radio-inline">
-                          <input type="radio" name="inputImagePositionX" value="left" checked="checked"> Left
+                          <input type="radio" name="inputImagePositionX" value="left" checked="checked"> Izquierda
                         </label>
                         <label class="radio-inline">
-                          <input type="radio" name="inputImagePositionX" value="center"> Center
+                          <input type="radio" name="inputImagePositionX" value="center"> Centro
                         </label>
                         <label class="radio-inline">
-                          <input type="radio" name="inputImagePositionX" value="right"> Right
+                          <input type="radio" name="inputImagePositionX" value="right"> Derecha
                         </label>
                       </div>
                     </li>
@@ -150,17 +138,17 @@
                 </div>
               </div>
               <div class="form-group">
-                <label for="inputBackgroundColor">Background color</label>
+                <label for="inputBackgroundColor">Color de fondo</label>
                 <div class="input-group">
                   <input type="text" id="inputBackgroundColor" value="#ffffff" class="form-control" />
                   <span class="input-group-addon"><i></i></span>
                 </div>
               </div>
               <div class="form-group">
-                <a class="btn btn-primary" href="#" target="_blank" disabled="disabled">Download image</a>
+                <a class="btn btn-primary" href="#" target="_blank" disabled="disabled">Descargar imagen</a>
               </div>
             </form>
-            <p class="help-block">Remember to download your image cause it will not be stored in the server.</p>
+            <p class="help-block">Recuerda descargar tu imagen ya que no se almacenará en el servidor.</p>
           </div>
         </div>
       </div>

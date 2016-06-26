@@ -216,6 +216,6 @@ $(document).ready(function() {
 	$('form a').click(function(event) {
 		var canvas = document.getElementById("avatar-canvas");
 
-		this.href = canvas.toDataURL();
+		this.href = canvas.toDataURL("image/jpg");
 	});
 });
